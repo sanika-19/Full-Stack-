@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding-right: 5px;
+        font-family: "Courier New", Courier, monospace;
+        color: brown;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 15px;
+        border-radius: 8px;
+        /* background: linear-gradient(135deg, rgb(102,126,234), rgb(118,75,162)); */
+      }
+
+      .tilt-link {
+        text-decoration: none;
+        padding: 16px 30px;
+        color: white;
+        border-radius: 14px;
+        display: inline-block;
+
+        /* Glass + gradient */
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 0.6),
+          rgba(148, 187, 233, 0.6)
+        );
+        backdrop-filter: blur(12px);
+
+        /* 3D setup */
+        transform-style: preserve-3d;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        /* box-shadow: 0 10px 25px rgba(0,0,0,0.5); */
+      }
+
+      /* Tilt effect */
+      .tilt-link:hover {
+        transform: perspective(600px) rotateX(10deg) rotateY(-10deg)
+          translateY(-4px);
+        /* box-shadow: 
+    0 18px 40px rgba(0,0,0,0.6),
+    0 0 25px rgba(148,187,233,0.6); */
+      }
+
+      /* Click interaction */
+      .tilt-link:active {
+        transform: perspective(600px) scale(0.97);
+      }
+      .tilt-link:hover {
+        transform: perspective(800px) rotateX(15deg) rotateY(-15deg);
+      }
+
+      .tilt-link::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0.25),
+          transparent
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .tilt-link:hover::before {
+        opacity: 1;
+      }
+
+      a:hover {
+        /* background: radial-gradient(circle, rgb(238,174,202), rgb(148,187,233));
+        color: wheat; */
+        background: radial-gradient(
+            circle at top right,
+            rgba(255, 255, 255, 0.15),
+            transparent 40%
+          ),
+          linear-gradient(135deg, #05010a, #2b1055, #7b2ff7, #ff4ecd, #5ddcff);
+      }
+    </style>
+  </head>
+  <body>
+    <pre>
+    <a  href="https://chat.openai.com"class="tilt-link">AI Help</a>     <a href="https://stackoverflow.com"class="tilt-link">Debug Help</a>    <a href="https://github.com"class="tilt-link">Project Repo</a>   <a href="https://firebase.google.com"class="tilt-link">Firebase Docs</a>  <a href="https://leetcode.com/problemset/"class="tilt-link"> Solve One Problem</a>
+ 
+    </pre>
+  </body>
+</html>
