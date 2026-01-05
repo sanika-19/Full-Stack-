@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+         <h2>Job Application</h2>
+        <label for="nm">Name:</label>
+        <input type="text" name="nm" id="nm"><br><br>
+
+          <label for="email">Email:</label>
+        <input type="text" name="email" id="email"><br><br>
+
+          <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone"><br><br>
+
+    <label for="file">Resume:</label>
+        <input type="file" name="file" id="file"><br>
+        <label for="exp">Experience (years)</label><br>
+        <input type="number" name="exp" id="exp" min="0" max="50"><br>
+        <fieldset>
+            <legend>Skills</legend>
+           
+            <input type="checkbox" name="ch1" id="ch1">
+             <label for="ch1">Html</label>
+           
+            <input type="checkbox" name="ch2" id="ch2">
+             <label for="ch2">CSS</label>
+           
+            <input type="checkbox" name="ch3" id="ch3">
+             <label for="ch3">Js</label>
+        </fieldset><br>
+<label for="edu"> Highest Education</label>
+        <select name="edu" id="edu">
+            <option value="high">High School</option>
+            <option value="Batch">12th</option>
+            <option value="bt">B.Tech</option>
+            <option value="mt">M.Tech</option>
+        </select>
+        <br><br>
+       
+        <Fieldset>
+            <legend>Availability</legend>
+        
+        <input type="radio" name="type" id="type"><br>
+         <label for="type">Full Time</label><br>
+          <input type="radio" name="type" id="type1"><br>
+         <label for="type1">Part Time</label><br>
+         </Fieldset>
+         <br>
+          <label for="tx"> additional Comments:</label><br>
+        <textarea name="tx" id="tx" cols="30" rows="10"></textarea><br>
+        <input type="submit" name="sb" id="sb" value="Submit Application">
+       
+    </form>
+</body>
+</html>

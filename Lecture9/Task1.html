@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex form in Html</title>
+</head>
+<body>
+    <form action="">
+        <h2>Event Registration</h2>
+        <label for="nm">Name:</label><br>
+        <input type="text" name="nm" id="nm"><br>
+
+          <label for="email">Email:</label><br>
+        <input type="text" name="email" id="email"><br>
+
+          <label for="phone">Phone:</label><br>
+        <input type="tel" name="phone" id="phone"><br>
+
+    <label for="occ">Occupation:</label><br>
+
+        <select name="occ" id="occ">
+            <option value="st">student</option>
+            <option value="pr">Professional</option>
+            <option value="ot">Other</option>
+          
+        </select><br>
+        <fieldset style="width: 10%;">
+        <legend>Topic Of Interest:</legend> <br>
+        <input type="checkbox" name="ch1" id="ch1"><br>
+        HTML <br>
+        <input type="checkbox" name="ch2" id="ch2"><br>
+        CSS <br>
+        <input type="checkbox" name="ch2" id="ch2"><br>
+        JS
+        </fieldset>
+        <br>
+        <label for="tx">Comments:</label><br>
+        <textarea name="tx" id="tx" cols="30" rows="10"></textarea>
+        <button>Register</button>
+    </form>
+</body>
+</html>
