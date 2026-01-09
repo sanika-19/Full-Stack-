@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position Property</title>
+<style>img{
+    margin:10px;
+}
+div{
+    border: 1px solid black;
+}
+.img2{
+    /* position: relative;
+    top: 100px;
+    left: 200px; */
+    /* position: absolute; used for overlapping
+    top: 100px; */
+}
+.container{
+    position: relative;
+    height: 800px;
+    background-color: beige;
+}
+.img4{
+    position: fixed;
+}
+
+.img3{
+    position: sticky;
+    top: 100px;
+}
+.box{
+    background-color: aquamarine;
+    height:5000px;
+}
+
+
+</style>
+</head>
+<body>
+    <!-- CSS Position Property  -->
+    <!-- <ol>
+        <li>static</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+    </ol> -->
+    <div class="container">
+        <img src="sup1.png" alt="podter 1" width="300px" height="300px" class="img1"/>
+     <img src="sup2.png" alt="podter 2" width="300px" height="300px" class="img2"/>
+     <img src="sup3.png" alt="podter 3" width="300px" height="300px" class="img3"/>
+     <img src="sup4.png" alt="podter 4" width="300px" height="300px" class="img4"/>
+    </div>
+    <div class="box"></div>
+</body>
+</html>
