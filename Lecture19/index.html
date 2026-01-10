@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Float Clear and Overflow</title>
+<style>
+.img1{
+    float: right;
+}
+#img2{
+    float: right;
+    clear: right;
+    
+}
+</style>
+</head>
+
+  <body>
+    <div class="container">
+        <img class="img1" src="sup1.png" alt="flower" width="200px" height="200px" />
+        <img src="sup2.png" alt="img2" id="img2" width="200px" height="200px">
+        
+   <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+    debitis numquam veritatis consequuntur eum aut deleniti maxime voluptas
+    quae. Provident praesentium quaerat beatae tempore alias, unde atque
+    incidunt dicta sequi blanditiis eos hic laudantium, nisi commodi temporibus
+    corporis recusandae! Eveniet numquam atque deserunt aspernatur veniam quas
+    molestiae? Placeat, magnam. Sed non obcaecati velit atque aspernatur,
+    dolores eaque illo laboriosam consequuntur facilis, provident quam.
+    Cupiditate dolor sequi reiciendis dolorem suscipit aliquid quia blanditiis,
+    inventore minima quasi! Delectus, unde, repudiandae nemo quos est debitis
+    temporibus, soluta odio incidunt iure cum exercitationem tempora tempore
+    ipsam? Veniam minima impedit eum saepe eligendi repellat cupiditate velit
+    possimus incidunt repellendus, facilis neque, tempora voluptatibus? Maiores
+    harum dolor odio earum debitis, temporibus aut aliquid ut et! Vero animi
+    culpa soluta nesciunt. Repudiandae autem doloremque omnis! Culpa totam
+    adipisci quod corporis? Ratione repellat ea officia libero velit iste,
+    accusantium quasi quisquam, voluptatibus nihil perferendis ipsum minus,
+    dolores odio consequuntur illo? Minima incidunt error, esse, id, corrupti
+    sed unde laboriosam quas repudiandae dignissimos fuga ullam. Temporibus enim
+    omnis maiores. Maxime fugit vitae ut numquam repudiandae illo quod
+    consequatur ipsa ex recusandae, consequuntur fuga placeat? Illo aliquam,
+    sint praesentium sunt, ut eligendi quibusdam laudantium amet fugiat eaque
+    nesciunt. Animi natus magni ratione repudiandae culpa amet quis quod quo.
+    Tenetur eos facere atque itaque, ab praesentium quaerat alias eaque aut,
+    quae laudantium incidunt qui nam vel assumenda provident eveniet libero
+    perspiciatis eum adipisci? Dolor placeat laborum, quis tempora qui eligendi
+    debitis harum impedit accusamus esse sed in. Iusto ducimus quam voluptatum
+    odit dolores cum eligendi sapiente ullam debitis? Similique culpa libero
+    quas, perferendis dolor rem delectus reprehenderit doloribus eum. Suscipit
+    commodi optio, aspernatur maxime vel architecto atque? Placeat aliquam omnis
+    dolores necessitatibus! Quo nesciunt animi alias quis ullam magnam veritatis
+    magni accusantium excepturi voluptates quia repudiandae praesentium iste
+    unde, nam neque consequuntur numquam odio ea sapiente quas, dolore eveniet
+    deserunt dolorum! Iusto nostrum eius veniam nemo inventore aperiam,
+    perferendis, odio necessitatibus consequatur quaerat sapiente quibusdam
+    autem error reiciendis labore dicta explicabo corrupti deleniti ab unde.
+    Eos, culpa blanditiis, odio neque fuga ipsum quidem recusandae dolorem, non
+    aspernatur debitis dolore nostrum assumenda eaque nobis. Sint, deleniti
+    repellendus dignissimos quae iusto optio quidem, esse quo obcaecati
+    similique pariatur cumque dolore perspiciatis cupiditate id? Minima dolorem
+    vitae nulla eum! Perspiciatis eum sapiente quidem odio numquam? Nam autem
+    perspiciatis alias ipsa ducimus exercitationem earum soluta tenetur non vero
+    itaque, reprehenderit dolore quas ea maiores corporis necessitatibus
+    voluptate dolorum maxime qui doloribus saepe! Sapiente dicta vero dolore
+    deserunt cum et natus sit repudiandae numquam molestias! Similique, aperiam
+    nemo ad ab illo consectetur aut voluptatibus expedita commodi saepe quo,
+    fuga omnis vel assumenda totam libero exercitationem eos quae consequatur
+    dolor harum doloremque? Tempora, ipsam? Sed eaque distinctio aspernatur
+    mollitia atque assumenda, maiores dicta ipsam quo minus necessitatibus fuga
+    nobis vitae excepturi ab unde libero veniam consequatur. Laboriosam
+    blanditiis quis, doloribus, eius maxime nihil nemo nisi similique labore
+    accusantium velit quibusdam minus. Sed est incidunt error rerum, dolorum
+    explicabo reprehenderit eaque perferendis alias nemo aspernatur
+    exercitationem sequi inventore facere!
+  </p>
+  
+  <!-- <p>aspernatur debitis dolore nostrum assumenda eaque nobis. Sint, deleniti
+    repellendus dignissimos quae iusto optio quidem, esse quo obcaecati
+    similique pariatur cumque dolore perspiciatis cupiditate id? Minima dolorem
+    vitae nulla eum! Perspiciatis eum sapiente quidem odio numquam? Nam autem
+    perspiciatis alias ipsa ducimus exercitationem earum soluta tenetur non vero
+    itaque, reprehenderit dolore quas ea maiores corporis necessitatibus
+    voluptate dolorum maxime qui doloribus saepe! Sapiente dicta vero dolore
+    deserunt cum et natus sit repudiandae numquam molestias! Similique, aperiam
+    nemo ad ab illo consectetur aut voluptatibus expedita commodi saepe quo,
+    fuga omnis vel assumenda totam libero exercitationem eos quae consequatur
+    dolor harum doloremque? Tempora, ipsam? Sed eaque distinctio aspernatur
+    mollitia atque assumenda, maiores dicta ipsam quo minus necessitatibus fuga
+    nobis vitae excepturi ab unde libero veniam consequatur. Laboriosam
+    blanditiis quis, doloribus, eius maxime nihil nemo nisi similique labore
+    accusantium velit quibusdam minus. Sed est incidunt error rerum, dolorum
+    explicabo reprehenderit eaque perferendis alias nemo aspernatur
+    exercitationem</p>-->
+</div> 
+
+
+</body>
+</html>
