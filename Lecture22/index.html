@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow in CSS</title>
+    <style>
+        :root{
+             --primary-color: brown;
+        }
+      .container {
+        width: 640px;
+        height: 640px;
+        border: 2px solid black;
+        background-color: beige;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        box-shadow: 10px, 30px, 5px red;
+      }
+      .box{
+        background-color: azure;
+        width: 330px;
+        height: 330px;
+    
+        border: 1px solid brown;
+        margin: 5px;
+        padding: 5px;
+        /* box-shadow: -10px 10px grey; */
+        /* box-shadow: 10px 10px 5px 1px rgb(94, 86, 83); */
+        /* box-shadow: inset 10px 10px 5px 1px gray; */
+        /* box-shadow: 10px 10px 5px grey,10px 15px 2px pink; */
+        /* box-shadow: 10px 10px 5px var(--primary-color); */
+      }
+      p{
+        font-size: 15px;
+        font-family: cursive;
+      }
+      #head1{
+        /* text-shadow: 2px 5px 5px gray; */
+       /* text-shadow: yellow 4px 4px;; */
+        /* text-shadow: 5px 5px; */
+       /* text-shadow: green 12px 13px 5px; */
+       text-shadow: 10px 5px 2px red,10px 5px 2px blue,10px 3px 2px green;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="sup1.png" alt="" width="170px" height="100px"  />
+        <h1 id="head1">Welcome to Codexa</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil veniam
+          distinctio incidunt doloremque velit, facere aspernatur repellat eos
+          ab id atque earum? Alias, id. Dignissimos!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
