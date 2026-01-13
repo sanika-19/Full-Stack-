@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            display: flex;
+            border-radius: 3px;
+            background-color: rgb(226, 226, 151);
+            display: flex;
+            flex-direction: row;
+            width: 450px;
+            margin: 5px;
+            padding: 10px;
+        }
+        #leftbox{
+            background-color: rgb(239, 239, 239);
+            border:1px slateblue solid;
+            width: 47%;
+            margin: 3px;
+            display: flex;
+            flex-direction: column;
+            padding: 2px;
+        }
+        #rightbox{
+            background-color: rgb(97, 37, 57);
+            border:1px slateblue solid;
+            width: 47%;
+             margin: 3px;
+            padding: 2px;
+        }
+        p{
+            border: 1px solid black;
+
+        }
+        /* 640 peksha jast width asel trr it will diplay as row */
+        @media(max-width:640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      
+        <div id="leftbox">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div> 
+        <div id="rightbox">
+            <img src="sup1.png" alt="" width="200px" height="200px">
+        </div>
+    </div>
+</body>
+</html>
