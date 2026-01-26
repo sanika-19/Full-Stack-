@@ -1,0 +1,168 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: none;
+    background-color: #e2e5e8;
+    background-image: linear-gradient(98deg,#e2e5e8 0%,#ffffff 100%);
+
+/* background: linear-gradient(225deg, #abc8de 0.000%, #c7c9d8 16.667%, #e5cccf 33.333%, #ffd3c7 50.000%, #ffdbc2 66.667%, #ffe4c0 83.333%, #ffedc3 100.000%); */
+}
+nav{
+    width: 100%;;
+    overflow-x: none;
+    padding-right: 2rem;
+}
+.navcontainer{
+    display: flex;
+    width: 100vw;
+  background: #0a0a0a;
+background: linear-gradient(90deg, rgba(10, 10, 10, 1) 9%, rgba(63, 63, 117, 1) 44%, rgba(204, 177, 177, 1) 100%);
+    min-height: 70px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+#navList{
+    list-style:  none;
+    font-size: 2rem;
+    display: flex;
+    padding: 10px;
+    /* margin-left:15px ;
+    margin-right: 15px; */
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+#navitems{
+    display: flex;
+    gap: 30px;
+    
+}
+    
+#navLogo{
+    font-size: 2rem;
+    color:azure;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+.footerBox{
+ background: #0a0a0a;
+background: linear-gradient(90deg, rgba(10, 10, 10, 1) 9%, rgba(63, 63, 117, 1) 44%, rgba(204, 177, 177, 1) 100%);
+ color: azure;
+ width: 100%;
+ text-align: center;
+ min-height: 30px;
+ font-size: 1.5rem;
+
+}
+.contentBox{
+    width: 60%;
+    margin: auto;
+    /* border: 1px solid black; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black
+}
+.item{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+.rightBox{
+  position: relative;  
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 20px;
+}
+.rightBox img{
+   height: 350px;
+   width: 250px;
+   border-radius: 10px;
+}
+.rightBox:hover{
+    transform: scale(1.1);
+    transition: all 0.6s 0s ease-in-out;
+  
+}
+    
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftBox h2{
+   
+    font-size: 1.5rem;
+}
+.ingBox{
+    font-size: 1.1rem;
+}
+.recipeBox{
+    font-size: 1rem;
+}
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36,34,34,0.713);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 0;
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+    
+    transition: all 0.5s ease-in-out;
+}
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+   
+}
+
+/* About Page */
+.aboutBox h1{
+    font-family: 'Courier New', Courier, monospace;
+    justify-items: center;
+    align-items: center;
+}
+.aboutBox{
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0px 0px 30px black;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.aboutBox:hover{
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+}
+
+
+    
