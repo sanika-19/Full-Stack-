@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .continer {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e0eafc; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #cfdef3,
+        #e0eafc
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #cfdef3,
+        #e0eafc
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .card {
+      width: 300px;
+      height: 450px;
+      background: white;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      gap: 25px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 30%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .textbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      gap: 25px;
+      font-size: 0.7em;
+    }
+    .box {
+      width: 85%;
+      height: 10%;
+      /* min-height: 2%; */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: #83a4d4; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #b6fbff,
+        #83a4d4
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #b6fbff,
+        #83a4d4
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      border-radius: 10px;
+      align-items: center;
+      padding: 10px;
+    }
+    .box img{
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+    }
+    p{
+      font-size: 1em;
+    }
+    #paymentButton{
+       width: 80%;
+      height: 9%;
+      background-color:rgb(22,22,79);
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23) ;
+    }
+    .cancelbox a{
+      font-size: 0.7em;
+      color: gray;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: large;
+    }
+   
+  </style>
+
+  <body>
+    <div class="continer">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyZHN8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+          alt="Card Image"
+        />
+        <div class="textbox">
+          <h3>Order Summary</h3>
+          <p>
+            Food provides essential nutrients and energy for the body,
+            supporting growth, health, and daily activities while bringing
+            people together through taste, culture, tradition, and enjoyment in
+            everyday life. 🍽️✨
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="img1.jpg" alt="music icon" />
+          <p>Annual Plan </p>
+           <p>$99.9/year </p>
+          <a href="#">Change</a>
+        </div>
+        <button id="paymentButton">
+          Proceed to Payment
+        </button>
+        <div class="cancelbox"><a href="#">Cancel Order</a></div>
+        
+      </div>
+    </div>
+  </body>
+</html>
